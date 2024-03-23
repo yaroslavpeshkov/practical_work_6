@@ -10,6 +10,9 @@ y_l2 = float(input('yl2 = '))
 x_r2 = float(input('xr2 = '))
 y_r2 = float(input('yr2 = '))
 
+if (x_r2 - x_l2)*(y_l2 - y_r2) > (x_r1 - x_l1)*(y_l1 - y_r1):
+    x_l1, x_r1, y_l1, y_r1, x_l2, x_r2, y_l2, y_r2 = x_l2, x_r2, y_l2, y_r2, x_l1, x_r1, y_l1, y_r1
+
 turtle.up()
 turtle.setposition(x_l1, y_l1)
 turtle.down()
